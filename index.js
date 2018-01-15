@@ -255,7 +255,7 @@ function displayDetails () {
 	} else if (portfolioDisplay.classList.contains("snatcherBot")) {
 		project = "Snatcher Bot"
 		description = "Tweets rhymed-variations on classical novels every two hours"
-		link = "twhttps://twitter.com/SnatcherInThePi"
+		link = "https://twitter.com/SnatcherInThePi"
 		
 	} else if (portfolioDisplay.classList.contains("fracking")) {
 		project = "Fracking in Florida Map"
