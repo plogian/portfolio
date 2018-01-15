@@ -202,7 +202,7 @@ for (var i = 0; i<tags.length; i++) {
 
 
 // Event listener to blow up portfolio pieces when thumbnail clicked
-portfolioItemsArray = ['omdb', 'wholeLife', 'snatcherBot', 'fracking', 'industryByZip', 'dullBot', 'worstCommutes'];
+portfolioItemsArray = ['omdb', 'wholeLife', 'snatcherBot', 'fracking', 'industryByZip', 'dullBot', 'worstCommutes', 'mappingBroward', 'babyNames'];
 
 function changeDisplayImage (j) {
 	return function (){
@@ -275,6 +275,16 @@ function displayDetails () {
 		project = "Cities with the worst commutes in America"
 		description = "Cities with the worst commutes in America. Covered by MSN Money."
 		link = "https://www.msn.com/en-us/money/realestate/cities-with-the-worst-commutes-in-america/ss-AAtKHVl?ocid=ob-fb-enus-894"
+		
+	} else if (portfolioDisplay.classList.contains("mappingBroward")) {
+		project = "Mapping Broward"
+		description = "Interactive map of white population in Broward County, created with R."
+		link = "https://plogian.github.io/mapping_broward/plots/PercentWhiteMap.html"
+		
+	} else if (portfolioDisplay.classList.contains("babyNames")) {
+		project = "Classic Baby Names"
+		description = "Classic Baby Names that are Going Extinct. Covered by MSN Lifestyle"
+		link = "https://www.msn.com/en-us/lifestyle/parenting/classic-baby-names-that-are-going-extinct/ss-AAtZIhl?li=BBnb7Kz#image=1"
 		
 	} else {
 		project= "none"

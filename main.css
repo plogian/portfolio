@@ -235,6 +235,16 @@ html, body {
     background-size: cover;
 }
 
+.mappingBroward {
+    background: url("images/mappingBroward.png") no-repeat center;
+    background-size: cover;
+}
+
+.babyNames {
+    background: url("images/classicBabyNames.png") no-repeat center;
+    background-size: cover;
+}
+
 /* Navigation */
 
 .fa.fa-chevron-down {
@@ -278,6 +288,7 @@ html, body {
 /* 6- Media Queries */
 .content-mobile {
     display: none;
+    font-size: 3em;
 }
 
 @media only screen and (max-width: 800px) {
