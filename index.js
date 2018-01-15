@@ -4,6 +4,7 @@
 // ** 3 Fade-Ins
 // ** 4 Masonry Effect
 // ** 5 Portfolio Functionality
+// ** 6 Draggable Form
 
 // ** 1 Page Piling
 
@@ -55,9 +56,9 @@ for(var i=0; i<mediumText.length; i++) {
 function randomColorPalette(){
 	var colorPalette= {}
 	//pick random colors within a neutral range
-	var red = Math.floor(Math.random()*(100-60+1)+60);
-	var green = Math.floor(Math.random()*(100-60+1)+60);
-	var blue = Math.floor(Math.random()*(100-60+1)+60);
+	var red = Math.floor(Math.random()*(100-60+1)+80);
+	var green = Math.floor(Math.random()*(100-60+1)+80);
+	var blue = Math.floor(Math.random()*(100-60+1)+80);
 	
 	//create a darker color by multiplying base rgb by 90%
 	var redDark = Math.floor(red*0.8);
@@ -65,9 +66,9 @@ function randomColorPalette(){
 	var greenDark = Math.floor(green*0.8);
 	
 	//create a lighter color by multiplying base rgb by 2
-	var redLight = Math.floor(red*2);
-	var blueLight = Math.floor(blue*2);
-	var greenLight = Math.floor(green*2);
+	var redLight = Math.floor(red*2.125);
+	var blueLight = Math.floor(blue*2.125);
+	var greenLight = Math.floor(green*2.125);
 	
 	colorPalette[0]  = "rgb(" + red + ", " + green + ", " + blue + ")";
 	colorPalette[1] = "rgb(" + redDark + ", " + greenDark + ", " + blueDark + ")";
@@ -292,3 +293,8 @@ function hideDetails () {
 portfolioDisplay.addEventListener("mouseenter", displayDetails);
 
 portfolioDisplay.addEventListener("mouseleave", hideDetails);
+
+// ** 6 Draggable Form
+$( function() {
+	$(".contact-form").draggable();
+});
