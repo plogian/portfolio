@@ -5,48 +5,117 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="main.css">
+        <script  src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.min.css" rel="stylesheet" type="text/css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.min.js"></script>
+
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
     <body>
-    <div class="container">
-        <div class="row social">
-            <div class="col-xs-1">
-                <a class="btn btn-social-icon light" href="mailto:lillianpodlog@gmail.com"><span class="glyphicon glyphicon-envelope"></span></a>
-            </div>
-            <div class="col-xs-11">
-                <a class="btn btn-social-icon btn-twitter light" href="https://twitter.com/lillianpodlog">
-                    <span class="fa fa-twitter"></span>
-                </a>
-                <a class="btn btn-social-icon btn-github light" href="https://github.com/plogian">
-                    <span class="fa fa-github"></span>
-                </a>
-                <a class="btn btn-social-icon btn-linkedin light" href="https://www.linkedin.com/in/lillianpodlog/">
-                    <span class="fa fa-linkedin"></span>
-                </a>
+        <div id="pagepiling">
+        <div class="section dark" id="section-1" data-anchor="section1">
+          <div class="container top">
+                    <div class="row">
+                        <div class="col-lg-12" id="main-heading">
+                            <span class="medium-text">&lt;</span><span class="light-text">Lillian Podlog</span><span class="medium-text">&gt;</span>
+                        </div>
+                    </div> 
+                </div>
 
-            </div>
-            
-        </div> 
-    </div>
-<div class="container top">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1><span class="dark">&lt;</span><span class="light">Lillian Podlog</span><span class="dark">&gt;</span></h1>
+                <div class="stripe medium">
+                  <h1 id="stripe-text" class="medium-text">Bored of the color scheme? Press the space bar to change it up.</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12" id="sub-heading">
+                        <span class="medium-text">{</span>
+                          <span class="light-text">
+                            Websites, Data Visualization, Maps
+                          </span>
+                        <span class="medium-text">}</span>
+                    </div>
+                </div>
+
+                <div class="row footer">
+                    <div class="col-lg-12">
+                        <div> <a href="#" class="fa fa-chevron-down light-text see-more"></a></div>
+                    </div>
+                </div>
         </div>
-    </div> 
-</div>
+        <div class="section medium" id="section-2" data-anchor="section2">
+                <div class="container">
+                   <div class="content-desktop">
+                        <div class="row">
+                            <ul class="tags">
+                                <li><a class="btn">Databases</a></li>
+                                <li><a class="btn">Data Journalism</a></li>
+                                <li><a class="btn">Maps</a></li>
+                                <li><a class="btn">Twitter Bots</a></li>
+                                <li><a class="btn">Web-Design</a></li>
+                            </ul>
+                        </div>
 
-<div id="stripe">
-    <p class="dark" id="small"> Press the spacebar.</p>
-</div>
-<div class="row">
-    <div class="col-lg-12 light description">
-        <p><span class="dark" id="small-tag">{</span>
-                Developer.  
-                Activist. 
-                Educator. 
-            <span class="dark" id="small-tag2">}</span></p>
-    </div>
-</div>
+                        <div class="row">
+                            <div class="col-xs-4 portfolio-items">
+                                <div class="grid">
+                                  <div class="grid-sizer"></div>
+                                  <div class="grid-item grid-item--width3 grid-item--height2 omdb databases"></div>
+                                  <div class="grid-item grid-item--width2 grid-item--height3 web-design wholeLife"></div>
+                                  <div class="grid-item grid-item--height3 maps fracking"></div>
+                                  <div class="grid-item grid-item--width2 twitterbots snatcherBot"></div>
+                                  
+                                  <div class="grid-item grid-item--height2 grid-item--width2 maps industryByZip"></div>
+                                   <div class="grid-item grid-item--height2 grid-item--width2 twitterbots dullBot"></div>
+                                   <div class="grid-item grid-item--height2 grid-item--width2 datajournalism worstCommutes"></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-8">
+                                <div id="portfolio-display" class="omdb">
+                                  <div class="portfolio-text">Application to update and search 3.5 million item movie database
+                                  <hr>
+                                  <button onclick="window.open('https://plogian.github.io/omdb_search_copy/home.html')" class="btn">See Project</button>
+                                </div>
+                                </div>
+                            
+                            </div>
+                          </div>
+                    </div>
+                    <div class="content-mobile">
+                        <h1 class="light-text dark">Please view on desktop or expand your screen to view</h1>
+                    </div>
+                  </div>
+                <div class="row footer">
+                    <div class="col-lg-12">
+                        <div> <a href="#" class="fa fa-chevron-down light-text see-more"></a></div>
+                    </div>
+                </div>
+        </div>  <!-- Section- 2  -->
+        <div class="section light" id="section-3" data-anchor="section3">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <form action="http://formspree.io/lillianpodlog@gmail.com" method="post" class="contact-form">
+                    <div class="contact-header" id="contact-main-header">Want to Work With Me?</div>
+                    <div class="form-group">
+                      <label for="inputName" class="dark-text inputLabel">Your Name</label>
+                      <input type="name" class="form-control" id="inputName" name="name">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputEmail" class="dark-text inputLabel">Email address</label>
+                      <input type="email" class="form-control" id="inputEmail" name="_replyto">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputMessage" class="dark-text inputLabel">Send me a message</label>
+                      <textarea class="form-control" id="inputTextarea" rows="5" name="body"></textarea>
+                    </div>
+                    <input type="submit" value="Send" class="btn">
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div> <!-- Section- 3 -->
+</div>  <!-- Page piling -->
 
 <script type="text/javascript" src="index.js"></script>
     </body>
