@@ -5,6 +5,7 @@
 // ** 4 Masonry Effect
 // ** 5 Portfolio Functionality
 // ** 6 Draggable Form
+// ** 7 Loading Screen
 
 // ** 1 Page Piling
 
@@ -307,4 +308,12 @@ portfolioDisplay.addEventListener("mouseleave", hideDetails);
 // ** 6 Draggable Form
 $( function() {
 	$(".contact-form").draggable();
+});
+
+// ** 7 Loading Screen
+
+// Wait for window load
+$(window).on('load', function() {
+	// Animate loader off screen
+	$(".se-pre-con").fadeOut("slow");;
 });

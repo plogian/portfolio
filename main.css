@@ -5,6 +5,7 @@
 /* 4- Section 2  */
 /* 5- Section 3 */
 /* 6- Media Queries */
+/* 7- Loading Screen */
 
 /* 1- Reset CSS */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
@@ -299,4 +300,18 @@ html, body {
     .content-mobile {
         display: inline;
     }
+}
+
+
+/* 7- Loading Screen */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(images/loader3.gif) center no-repeat #fff;
 }
