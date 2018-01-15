@@ -78,6 +78,7 @@ function randomColorPalette(){
 // after press space, change colors based on randomColorPalette
 function changeColor(e){
 	var keyCode = e.keyCode;
+	if( e.target.nodeName == "INPUT" || e.target.nodeName == "TEXTAREA" ) return;
 	if(keyCode === 32){
 		var newRand = randomColorPalette()
 		for(var i = 0; i<dark.length; i++) {
